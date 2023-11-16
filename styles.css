@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Background.jpg') center/cover fixed no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: 'Sherlyn';
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.description {
+    text-align: center;
+    padding: 1em;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.gift-option {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.gift-option:hover {
+    transform: scale(1.05);
+}
+
+.gift-option a {
+    text-decoration: none;
+    color: #333;
+}
+
+.exclude-fade::before {
+    content: none;
+}
